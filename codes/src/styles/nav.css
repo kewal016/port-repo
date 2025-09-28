@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Metamorphous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root header {
+  --height: auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 40%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  margin: 0;
+  background: #222222;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  background: #008080;
+  color: white;
+  padding: 0.8rem 2rem;
+}
+
+.logo div {
+  font-size: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.navigation nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.navigation nav li {
+  padding: 0 1.2rem;
+}
+.navigation nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  transition: 0.2s ease-in-out;
+  padding: 0.2rem;
+}
+.navigation nav a:hover {
+  color: black;
+}
+
+.links ul {
+  list-style: none;
+}
+.links ul li a {
+  display: flex;
+  justify-content: end;
+  margin-right: 0;
+}
+.links ul li a svg {
+  fill: white;
+  width: 2.5rem;
+  transition: 0.2s ease-in-out;
+}
+.links ul li a svg:hover {
+  transform: scale(1.15);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  font-size: 7rem;
+  color: #008080;
+  font-family: "Manrope", sans-serif;
+  padding-inline: 2rem;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+main h1:hover {
+  color: black;
+}
+main section button {
+  color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+main section button:hover {
+  border-color: #646cff;
+}
+main section button:focus, main section button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+main section #demo {
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+
+/*# sourceMappingURL=nav.css.map */

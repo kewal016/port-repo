@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Metamorphous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+:root {
+  header {
+    --height: auto;
+  }
+}
+
+//font
+$mainfont: 'Manrope', sans-serif;
+
+// font weights
+$thinweight: 300;
+$medweight: 500;
+$boldweight: 650;
+
+//background colors
+$mainColor: #008080;
+
+
+//text colors
+$blackcolor: black;
+$whitecolor: white;

@@ -1,0 +1,150 @@
+@import "./css_reset/reset.scss";
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 40%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  margin: 0;
+  background: #222222;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  background: $mainColor;
+  color: $whitecolor;
+  padding: .8rem 2rem;
+}
+
+// header > * {
+//   border: 2px solid red;
+// }
+
+.logo {
+  div {
+    font-size: 2rem;
+    font-family: $mainfont;
+    font-weight: $medweight;
+    letter-spacing: .1rem;
+  }
+}
+
+.navigation {
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+    }
+    li {
+      padding: 0 1.2rem;
+    }
+    a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: $whitecolor;
+      font-family: $mainfont;
+      text-transform: uppercase;
+      font-weight: $medweight;
+      letter-spacing: .3rem;
+      transition: .2s ease-in-out;
+      padding: .2rem;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}
+
+.links {
+  ul {
+    list-style: none;
+    li {
+      a {
+        display: flex;
+        justify-content: end;
+        margin-right: 0;
+        svg {
+          fill: $whitecolor;
+          width: 2.5rem;
+          transition: .2s ease-in-out;
+        }
+        svg:hover {
+          // fill: black;
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+}
+
+@mixin name {
+  font-size: 7rem;
+  color: $mainColor;
+  font-family: $mainfont;
+}
+
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+
+main {
+  @include flexbox;
+  h1 {
+    @include name;
+    padding-inline: 2rem;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: black;
+    }
+  }
+  section {
+    button {
+      color: white;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      padding: 0.6rem 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: 'Manrope', sans-serif;
+      background-color: #1a1a1a;
+      cursor: pointer;
+      transition: border-color 0.25s;
+
+      &:hover {
+        border-color: #646cff;
+      }
+      &:focus,
+      &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+      }
+    }
+    #demo {
+      color: white;
+      font-family: 'Manrope', sans-serif;
+    }
+  }
+}
+
+
+
